@@ -33,7 +33,7 @@ Route::post('/addblog', [BlogController::class, 'addBlog']);
 Route::get('/bloglist', [BlogController::class, 'bloglist']);
 Route::delete('/blogdelete/{id}', [BlogController::class, 'delete']);
 Route::get('/blog/{id}', [BlogController::class, 'getBlog']);
-Route::get('/blog/{id}', [BlogController::class, 'showBlog']);
+Route::get('/blog-details/{id}', [BlogController::class, 'showBlog']);
 Route::put('/updateblog/{id}', [BlogController::class, 'updateBlog']);
 Route::get('/search-blog/{key}', [BlogController::class, 'searchBlog']);
 Route::get('/user-profile/{id}', [UserController::class, 'profile']);
