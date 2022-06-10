@@ -28,7 +28,7 @@ const BlogList = () => {
     return (
         <div>
             <Header />
-            {/* <div className="col-sm-8 offset-sm-2">
+            <div className="col-sm-8 offset-sm-2">
                 <h1>Blog List</h1>
                 <Table striped bordered hover>
                     <thead>
@@ -51,26 +51,16 @@ const BlogList = () => {
                                 <td>
                                     <button className='btn btn-danger btn-sm' onClick={() => deleteOperation(item.id)}>Delete</button>
                                     <Link to={'update/'+item.id} className='btn btn-info btn-sm ml-2'>Update</Link>
+                                    <Link to={'blog-details/'+item.id} className='btn btn-info btn-sm ml-2'>Show</Link>
                                 </td>
                             </tr>
                         )
                     }
                     </tbody>
-                </Table> */}
-            <div className="col-sm-6 offset-sm-3">
-                <h1>Update Blog</h1>
-                <br/>
-                {
-                  data.map((item) =>
-                  <p>{item.title}</p>
-                  <br/>
-                  <img width='80' height='80' src={'http://127.0.0.1:8000/'+item.file_path} />
-                  <br/>
-                  <p>{item.description}</p>
-                  <br/>
-                }
-            </div>
-        </div>
+                </Table>  
+                </div>
+                </div>
+
     );
 };
 

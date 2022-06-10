@@ -8,7 +8,7 @@ const AddBlog = () => {
     const [description, setDescription] = useState('')
 
     async function addBlog() {
-       // console.log(title, title, description, file)
+       console.log(title, title, description, file)
         const formData = new FormData()
         formData.append('file_path', file)
         formData.append('title', title)

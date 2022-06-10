@@ -6,8 +6,8 @@ const UpdateBlog = (props) => {
 
     const [data, setData] = useState([])
     const [title, setTitle] = useState('')
-    const [file, setFile] = useState('')
     const [description, setDescription] = useState('')
+    const [file, setFile] = useState('')
 
     useEffect(  () => {
         getData()
@@ -24,7 +24,7 @@ const UpdateBlog = (props) => {
             method: 'POST',
             body: formData
         })
-        alert('Blog updated')
+        alert('product updated')
         getData()
     }
 
@@ -43,9 +43,9 @@ const UpdateBlog = (props) => {
             <div className="col-sm-6 offset-sm-3">
                 <h1>Update Blog</h1>
                 <br/>
-                <input type="text" defaultValue={data.title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Blog Title" className="form-control"/>
+                <input type="text" defaultValue={data.title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Product Name" className="form-control"/>
                 <br/>
-                <input type="text" defaultValue={data.description} onChange={(e) => setDescription(e.target.value)} placeholder="Enter Blog Description" className="form-control"/>
+                <input type="text" defaultValue={data.description} onChange={(e) => setDescription(e.target.value)} placeholder="Enter Product Description" className="form-control"/>
                 <br/>
                 <input type="file" defaultValue={data.file_path} onChange={(e) => setFile(e.target.files[0])}  className="form-control"/>
                 <br/>

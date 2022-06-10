@@ -14,6 +14,7 @@ import UpdateBlog from "./components/blogs/UpdateBlog";
 import BlogList from "./components/blogs/BlogList";
 import SearchBlog from "./components/blogs/SearchBlog";
 import Profile from "./components/user/Profile";
+import ShowBlog from './components/blogs/ShowBlog';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
                 </Route>
                 <Route path="/register">
                     <Register/>
+                </Route>
+                <Route path="/blog-details/:id">
+                    <ShowBlog/>
                 </Route>
                 
                 <Route path="/add">
