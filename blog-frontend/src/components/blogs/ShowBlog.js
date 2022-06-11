@@ -20,7 +20,6 @@ const ShowBlog = (props) => {
     return (
         <div>
             <Header />
-
 <div class="row">
   <div class="leftcolumn">
     <div class="card">

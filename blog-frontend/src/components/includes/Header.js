@@ -13,14 +13,13 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand>E-commerce</Navbar.Brand>
+                <Navbar.Brand>Testing Blog</Navbar.Brand>
                 <Nav className="mr-auto nav-bar-wrapper">
                     {
                         localStorage.getItem('user-info') ?
                             <>
-                                <Link to="/productlist">Product List</Link>
-                                <Link to="/add">Add Product</Link>
-                                <Link to="/search">Search Blog</Link>
+                                {/* <Link to="/productlist">Product List</Link> */}
+                                {/* <Link to="/add">Add Product</Link> */}
                                 <Link to="/addblog">Add Blog</Link>
                                 <Link to="/bloglist">Blog List</Link>
                             
@@ -30,6 +29,8 @@ const Header = () => {
                             <>
                                 <Link to="/login">Login</Link>
                                 <Link to="/register">Register</Link>
+                                <Link to="/blogs">All article</Link>
+                                <Link to="/search">Search Article</Link>
                             </>
                     }
                 </Nav>

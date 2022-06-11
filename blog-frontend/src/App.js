@@ -15,6 +15,8 @@ import BlogList from "./components/blogs/BlogList";
 import SearchBlog from "./components/blogs/SearchBlog";
 import Profile from "./components/user/Profile";
 import ShowBlog from './components/blogs/ShowBlog';
+import Blogs from './components/blogs/Articles';
+import Articles from './components/blogs/Articles';
 
 function App() {
   return (
@@ -30,13 +32,16 @@ function App() {
                 <Route path="/blog-details/:id">
                     <ShowBlog/>
                 </Route>
+                <Route path="/blogs">
+                    <Articles/>
+                </Route>
                 
-                <Route path="/add">
+                {/* <Route path="/add">
                     <Protected Cmp={AddProduct} />
-                </Route>
-                <Route path="/update/:id">
+                </Route> */}
+                {/* <Route path="/update/:id">
                     <Protected Cmp={UpdateProduct} />
-                </Route>
+                </Route> */}
                 
                 <Route path="/profile/:id">
                     <Protected Cmp={Profile} />
@@ -53,9 +58,9 @@ function App() {
                 <Route path="/bloglist">
                     <Protected Cmp={BlogList} />
                 </Route>
-                <Route path="/productlist">
+                {/* <Route path="/productlist">
                     <Protected Cmp={ProductList} />
-                </Route>
+                </Route> */}
             </Switch>
         </BrowserRouter>
     </div>
