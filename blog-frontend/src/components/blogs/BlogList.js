@@ -9,16 +9,6 @@ const BlogList = () => {
     useEffect( () => {
         getData()
     },[])
-
-    async function deleteOperation(id) {
-        let result = await fetch('http://127.0.0.1:8000/api/blogdelete/'+id, {
-            method: 'DELETE'
-        })
-        result = await result.json()
-        console.log(result)
-        getData()
-    }
-
     async function getData() {
         let result = await fetch('http://127.0.0.1:8000/api/bloglist')
         result = await result.json()
@@ -49,7 +39,6 @@ const BlogList = () => {
                                 <td><img width='80' height='80' src={'http://127.0.0.1:8000/'+item.file_path} /></td>
                                 <td>{item.description}</td>
                                 <td>
-                                    <button className='btn btn-danger btn-sm' onClick={() => deleteOperation(item.id)}>Delete</button>
                                     <Link to={'update/'+item.id} className='btn btn-info btn-sm ml-2'>Update</Link>
                                     <Link to={'blog-details/'+item.id} className='btn btn-info btn-sm ml-2'>Show</Link>
                                 </td>

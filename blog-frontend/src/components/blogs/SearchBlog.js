@@ -16,7 +16,7 @@ const SearchBlog = () => {
         <div>
             <Header />
             <div className="col-sm-6 offset-sm-3">
-                <h1>Search Blog</h1>
+                <h1>Search Article</h1>
                 <br/>
                 <input type="text" onChange={(e) => search(e.target.value)} placeholder="Enter Blog Title"  className="form-control"/>
                 <br/>

@@ -20,7 +20,7 @@ const Articles = () => {
         <div>
             <Header />
             <div className="col-sm-8 offset-sm-2">
-                <h1>Blog List</h1>
+                <h1>All Article List</h1>
                 <Table striped bordered hover>
                     <thead>
                     <tr>
