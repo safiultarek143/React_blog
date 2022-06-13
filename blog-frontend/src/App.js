@@ -15,6 +15,7 @@ import BlogList from "./components/blogs/BlogList";
 import SearchBlog from "./components/blogs/SearchBlog";
 import Profile from "./components/user/Profile";
 import ShowBlog from './components/blogs/ShowBlog';
+import Home from './components/blogs/Home';
 import Blogs from './components/blogs/Articles';
 import Articles from './components/blogs/Articles';
 
@@ -26,6 +27,9 @@ function App() {
                 <Route path="/login">
                     <Login/>
                 </Route>
+                <Route exact path="/">
+                    <Home/>
+                </Route>
                 <Route path="/register">
                     <Register/>
                 </Route>
@@ -34,6 +38,9 @@ function App() {
                 </Route>
                 <Route path="/blogs">
                     <Articles/>
+                </Route>
+                <Route path="/search">
+                    <SearchBlog />
                 </Route>
                 
                 {/* <Route path="/add">

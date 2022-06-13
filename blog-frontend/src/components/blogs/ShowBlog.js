@@ -24,7 +24,7 @@ const ShowBlog = (props) => {
   <div class="leftcolumn">
     <div class="card">
       <h2>{data.title}</h2>
-      <h5>Title description, Dec 7, 2017</h5>
+      <h5>Title description, June 13, 2022</h5>
       <div class="fakeimg"><img width='400' height='400' src={'http://127.0.0.1:8000/'+data.file_path} /></div>
       <p>{data.description}</p>
     </div>

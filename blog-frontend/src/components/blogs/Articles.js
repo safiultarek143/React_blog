@@ -24,7 +24,6 @@ const Articles = () => {
                 <Table striped bordered hover>
                     <thead>
                     <tr>
-                        <th>#</th>
                         <th>Title</th>
                         <th>Image</th>
                         <th>Description</th>
@@ -35,7 +34,6 @@ const Articles = () => {
                     {
                         data.map((item) =>
                             <tr>
-                                <td><Link to={'blog-details/'+item.id} className='btn btn-info btn-sm ml-2'>{item.id}</Link></td>
                                 <td><Link to={'blog-details/'+item.id} className='btn btn-info btn-sm ml-2'>{item.title}</Link></td>
                                 <td><img width='80' height='80' src={'http://127.0.0.1:8000/'+item.file_path} /></td>
                                 <td>{item.description}</td>
