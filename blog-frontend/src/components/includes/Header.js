@@ -13,7 +13,7 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark">
-                <Navbar.Brand>Testing Blog</Navbar.Brand>
+                <Navbar.Brand>MY Blog</Navbar.Brand>
                 <Nav className="mr-auto nav-bar-wrapper">
                     {
                         localStorage.getItem('user-info') ?
